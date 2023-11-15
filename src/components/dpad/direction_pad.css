@@ -1,0 +1,29 @@
+#arrow-up {
+  grid-area: up;
+}
+#arrow-down {
+  grid-area: down;
+}
+#arrow-left {
+  grid-area: left;
+}
+#arrow-right {
+  grid-area: right;
+}
+.arrow-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+
+  width: min(80vh, 80vw);
+  max-width: 1200px;
+  aspect-ratio: 1;
+
+  padding: 1rem;
+
+  grid-template-areas:
+    ". up ."
+    "left . right"
+    ". down .";
+}
