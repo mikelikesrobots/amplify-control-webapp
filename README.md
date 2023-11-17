@@ -12,8 +12,9 @@ npm run build
 To set up Amplify and deploy it, some settings need to be changed. Open the [App.tsx](./src/App.tsx) file and modify AWSIoTProvider details to match your own region and endpoint. Then install the [Amplify CLI](https://docs.amplify.aws/javascript/tools/cli/start/set-up-cli/) and run the Amplify setup commands:
 
 ```bash
-amplify init
-amplify add auth hosting
+amplify init  # Change project to use dist instead of build, and npm run-script dev instead of npm run-script start
+amplify add auth  # Default options
+amplify add hosting  # Default options
 amplify publish
 ```
 
